@@ -1,10 +1,9 @@
-import './App.css'
-import Navbar from './pages/Navbar'
-import Home from './pages/Home'
-import JobSeekers from './pages/JobSeekers'
-import Employers from './pages/Employers'
-import AboutUs from './pages/AboutUs'
-import Contact from './pages/Contact'
+import Navbar from './components/Navbar'
+import Home from './components/Home'
+import JobSeekers from './components/JobSeekers'
+import Employers from './components/Employers'
+import AboutUs from './components/AboutUs'
+import Contact from './components/Contact'
 import styled from 'styled-components'
 
 export default function App() {
@@ -25,7 +24,9 @@ export default function App() {
 
 const Content = styled.main`
   display: flex;
-  gap: 15px;
+  gap: 30px;
   flex-direction: column;
-  width: 100%; height: 100%;
+  width: 100%;
+  align-items: center;
+
 `

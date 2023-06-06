@@ -6,6 +6,12 @@
   --bg-color: #F9F7F7;
   --stronger-color: #3F72AF;
   --lighter-color: #DBE2EF;
+
+  --page-heading-font-size: 1.8em;
+
+  --desktop-navbar-height: 80px;
+  --mobile-navbar-height: 66px;
+
 }
 
 * {
@@ -13,19 +19,41 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body, #root {
   width: 100%;
-  height: 100%;
 }
 
 body {
   font-family: 'Geologica', sans-serif;
   font-weight: 300;
+  font-size: 20px;
   background-color: var(--bg-color);
   color: var(--main-color);
-  line-height: 1.5;
+  line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
 }
 
 input, button, textarea, select {
   font: inherit;
+}
+
+ul {
+  list-style-type: '—  ';
+}
+
+h1 {
+  font-size: var(--page-heading-font-size);
+}
+
+a {
+  color: var(--stronger-color);
 }

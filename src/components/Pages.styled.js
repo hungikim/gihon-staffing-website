@@ -63,28 +63,45 @@ export const PageSubSubHeading = styled.h3`
 `
 
 export const Form = styled.form`
-  display: grid;
-  gap: 5px;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(2, 300px);
-  grid-template-rows: repeat(4, 50px);
+  justify-content: center;
   
-  input, textarea { 
-    font-size: 0.8em; 
+  input {
+    padding-left: 1rem; 
+  }
+  textarea {
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    resize: none;
+  }
+  input, textarea, button {
+    border: 2px solid var(--lighter-color);
+    border-radius: 5px;
+  }
+  button {
+    background: var(--stronger-color);
+    color: var(--bg-color);
   }
 
-  input { padding-left: 1rem; }
-  textarea { padding-left: 1rem; padding-top: 0.5rem; }
-  textarea { grid-row:span 3; }
-  button { }
-  
+  @media (min-width: 769px) {
+    display: grid;
+    gap: 10px;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(4, 50px);
+    
+    input, textarea { font-size: 0.8em; }
+    textarea { grid-row: span 3; }
+  }
+
   @media (max-width: 768px) {
-    margin-top: 1rem;
     display: flex;
     flex-direction: column;
+    gap: 5px;
     align-items: center;
-    width: 80%;
-
-    * { width: 60vw; }
+    input, textarea { width: 60vw; }
+    button {
+      width: 150px;
+      height: 40px;
+    }
   }
 `

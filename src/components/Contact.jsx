@@ -50,7 +50,6 @@ const ContactContent = styled(PageContent)`
 const FormAndMap = styled.div`
   display: flex;
   gap: 50px;
-  align-items: start;
   
   @media (max-width: 768px) {
     flex-direction: column;

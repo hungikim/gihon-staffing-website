@@ -62,7 +62,7 @@ export default function Home () {
 const IndustriesWeServe = styled.ul`
     @media (min-width: 769px) {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-auto-flow: column;
+        grid-template-rows: repeat(auto-fit, 1fr);
+        grid-template-columns: 1fr 1fr;
     }
 `

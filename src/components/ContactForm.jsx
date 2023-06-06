@@ -19,10 +19,6 @@ export const ContactForm = () => {
       });
   };
 
-  const test = (e) => {
-    e.preventDefault()
-    formText.current.innerHTML="Your message has been sent"
-  }
   return (
     <FormWrapper>
         <Form ref={form} id='contact-form' onSubmit={sendEmail}>

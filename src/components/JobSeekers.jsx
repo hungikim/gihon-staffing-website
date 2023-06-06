@@ -60,6 +60,6 @@ const Partners = styled.ul`
   @media (min-width: 769px) {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
   }
 `

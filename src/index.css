@@ -33,7 +33,7 @@ body {
   font-size: 20px;
   background-color: var(--bg-color);
   color: var(--main-color);
-  line-height: 1.75;
+  line-height: 1.8;
 }
 
 @media (max-width: 768px) {
@@ -48,6 +48,7 @@ input, button, textarea, select {
 
 ul {
   list-style-type: '—  ';
+  line-height: 2;
 }
 
 h1 {

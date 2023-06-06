@@ -48,7 +48,9 @@ export default function Employers() {
                     </li>
                 </PlacementOptions>
 
-                <i style={{marginLeft:'1rem'}}>* The above rates may be subject to change to offset any unexpected Federal and/or Provincial remittances.</i>
+                <i style={{marginLeft:'1rem', color:'var(--stronger-color)'}}>
+                  * The above rates may be subject to change to offset any unexpected Federal and/or Provincial remittances.
+                </i>
 
             
             
@@ -65,14 +67,14 @@ export default function Employers() {
             <PageSubHeading>
               Fill out the following form and one of our recruiters will contact you shortly to set up a meeting and advance with the process
             </PageSubHeading>
-            <EmployersForm>
+            <Form>
                 <input placeholder='Name' type='text' id='name' name='name' />
                 <input placeholder='Email' type='email' id='email' name='email' />
                 <input placeholder='Phone' type='tel' id='phone' name='phone' />
                 <input placeholder='Subject' type='text' id='subject' name='subject' />
                 <textarea placeholder='Message' id='message' name='message' />
-                <button type="submit" value="submit">Submit</button>
-            </EmployersForm>
+                <button type="submit" value="send">Send</button>
+            </Form>
             
 
             <PageSubHeading style={{marginBottom: 0}}>Our Search Process For Your Business</PageSubHeading>
@@ -144,8 +146,12 @@ const SearchProcess = styled.div`
   margin-left: 1rem;
   gap: 20px;
   > * { flex-grow: 1; flex-basis: 33%;}
-
   li { font-size: 1em; }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 0;
+  }
 `
 
 const ListTitle = styled.h4`
@@ -155,8 +161,4 @@ const ListTitle = styled.h4`
 const ListText = styled.p`
   font-weight: 200;
   font-size: 0.9em;
-`
-const EmployersForm = styled(Form)`
-  margin-left: 3rem;
-
 `

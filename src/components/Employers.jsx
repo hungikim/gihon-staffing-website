@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { PageHeading, Banner, PageSubHeading, PageWrapper, PageSubSubHeading, EmploymentImg, PageContent, Form } from "./Pages.styled";
+import { PageHeading, Banner, PageSubHeading, PageWrapper, PageSubSubHeading, EmploymentImg, PageContent } from "./Pages.styled";
 import employmentImg from '/src/assets/employment2.jpg'
+import { ContactForm } from "./ContactForm";
 
 export default function Employers() {
     return (
@@ -67,14 +68,7 @@ export default function Employers() {
             <PageSubHeading>
               Fill out the following form and one of our recruiters will contact you shortly to set up a meeting and advance with the process
             </PageSubHeading>
-            <Form>
-                <input placeholder='Name' type='text' id='name' name='name' />
-                <input placeholder='Email' type='email' id='email' name='email' />
-                <input placeholder='Phone' type='tel' id='phone' name='phone' />
-                <input placeholder='Subject' type='text' id='subject' name='subject' />
-                <textarea placeholder='Message' id='message' name='message' />
-                <button type="submit" value="send">Send</button>
-            </Form>
+            <ContactForm/>
             
 
             <PageSubHeading style={{marginBottom: 0}}>Our Search Process For Your Business</PageSubHeading>

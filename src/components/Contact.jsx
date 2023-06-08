@@ -1,5 +1,5 @@
 import { ContactForm } from "./ContactForm";
-import { EmploymentImg, Banner, PageContent, PageHeading, PageWrapper, Form } from "./Pages.styled";
+import { EmploymentImg, Banner, PageContent, PageHeading, PageWrapper } from "./Pages.styled";
 import employmentImg from '/src/assets/contact.jpg'
 import styled from "styled-components";
 
@@ -28,7 +28,7 @@ export default function Contact() {
                 <iframe
                     width="480"
                     height="360"
-                    style={{border:0}}
+                    style={{border:'1px solid var(--lighter-color)'}}
                     loading="lazy"
                     allowFullScreen
                     referrerPolicy="no-referrer-when-downgrade"

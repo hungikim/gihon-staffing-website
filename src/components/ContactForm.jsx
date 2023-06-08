@@ -21,11 +21,11 @@ export const ContactForm = ({ name }) => {
   return (
     <FormWrapper>
         <Form ref={form} name={name} method="POST" data-netlify='true'>
-            <input placeholder='Name *' type='text' id='from_name' name='from_name' required/>
-            <input placeholder='Email *' type='email' id='from_email' name='from_email' required/>
-            <input placeholder='Phone' type='tel' id='from_phone' name='from_phone' />
-            <input placeholder='Subject' type='text' id='subject' name='subject' />
-            <textarea placeholder='Message *' id='message' name='message' required/>
+            <label><input placeholder='Name *' type='text' id='from_name' name='from_name' required/></label>
+            <label><input placeholder='Email *' type='email' id='from_email' name='from_email' required/></label>
+            <label><input placeholder='Phone' type='tel' id='from_phone' name='from_phone' /></label>
+            <label><input placeholder='Subject' type='text' id='subject' name='subject' /></label>
+            <label><textarea placeholder='Message *' id='message' name='message' required/></label>
             <button type="submit" value="Send">Send</button>
         </Form>
         <FormText ref={formText}></FormText>

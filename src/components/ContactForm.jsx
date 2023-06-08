@@ -20,7 +20,7 @@ export const ContactForm = () => {
 
   return (
     <FormWrapper>
-        <Form ref={form} id='contact-form' onSubmit={sendEmail}>
+        <Form ref={form} id='contact-form' onSubmit={sendEmail} netlify>
             <input placeholder='Name *' type='text' id='from_name' name='from_name' required/>
             <input placeholder='Email *' type='email' id='from_email' name='from_email' required/>
             <input placeholder='Phone' type='tel' id='from_phone' name='from_phone' />

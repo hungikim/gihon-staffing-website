@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { PageHeading, Banner, PageSubHeading, PageWrapper, PageContent, EmploymentImg } from "./Pages.styled"
+import { PageHeading, Banner, PageSubHeading, PageWrapper, PageContent, EmploymentImg, Border } from "./Pages.styled"
 import employmentImg from '/src/assets/laptop.jpg'
 
 export default function JobSeekers () {
@@ -39,6 +39,7 @@ export default function JobSeekers () {
                 Once submitted one of our recruiters will contact you to advance with the process.
               </p>
 
+              <Border/>
               <PageSubHeading>Our Clients & Partners <span style={{color:"var(--stronger-color)"}}>(... Logo / select)</span></PageSubHeading>
               <Partners>
                 <li>BNX Shipping Toronto Inc.</li>
@@ -50,7 +51,6 @@ export default function JobSeekers () {
                 <li>LG Electronics</li>
                 <span>... and more</span>
               </Partners>
-
           </PageContent>
         </PageWrapper>
     )

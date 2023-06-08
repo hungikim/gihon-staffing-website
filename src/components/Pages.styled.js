@@ -61,3 +61,8 @@ export const PageSubSubHeading = styled.h3`
   margin: 1rem 0 0.5rem 0;
   font-weight: 500;
 `
+
+export const Border = styled.div`
+  margin: 35px 0;
+  border: 1px solid var(--lighter-color);
+`

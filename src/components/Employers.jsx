@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { PageHeading, Banner, PageSubHeading, PageWrapper, PageSubSubHeading, EmploymentImg, PageContent } from "./Pages.styled";
+import { PageHeading, Banner, PageSubHeading, PageWrapper, PageSubSubHeading, EmploymentImg, PageContent, Border } from "./Pages.styled";
 import employmentImg from '/src/assets/employment2.jpg'
 import { ContactForm } from "./ContactForm";
 
@@ -70,7 +70,7 @@ export default function Employers() {
             </PageSubHeading>
             <ContactForm name="employers-form"/>
             
-
+            <Border/>
             <PageSubHeading style={{marginBottom: 0}}>Our Search Process For Your Business</PageSubHeading>
             <SearchProcess>
               <div>

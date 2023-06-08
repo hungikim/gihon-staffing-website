@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 
-export const ContactForm = () => {
+export const ContactForm = ({ name }) => {
   const form = useRef();
   const formText = useRef()
   const sendEmail = (e) => {
@@ -20,7 +20,7 @@ export const ContactForm = () => {
 
   return (
     <FormWrapper>
-        <Form ref={form} id='contact-form' onSubmit={sendEmail} netlify>
+        <Form ref={form} name={name} id='contact-form' onSubmit={sendEmail} netlify>
             <input placeholder='Name *' type='text' id='from_name' name='from_name' required/>
             <input placeholder='Email *' type='email' id='from_email' name='from_email' required/>
             <input placeholder='Phone' type='tel' id='from_phone' name='from_phone' />

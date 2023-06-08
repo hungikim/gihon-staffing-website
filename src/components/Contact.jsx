@@ -4,6 +4,7 @@ import employmentImg from '/src/assets/contact.jpg'
 import styled from "styled-components";
 
 export default function Contact() {
+    const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY || process.env.VITE_GOOGLE_API_KEY
     return (
         <PageWrapper id="Contact">
           <Banner>
@@ -24,7 +25,7 @@ export default function Contact() {
                 Or simply fill out the forms below and send to us. We enjoy hearing from you!<br/><br/>
             </p>
             <FormAndMap>
-                <ContactForm/>
+                <ContactForm name="contact-form"/>
                 <iframe
                     width="480"
                     height="360"
@@ -32,7 +33,7 @@ export default function Contact() {
                     loading="lazy"
                     allowFullScreen
                     referrerPolicy="no-referrer-when-downgrade"
-                    src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_GOOGLE_API_KEY}&q=840+Queens+Plate+Dr,+Etobicoke,+ON+M9W+0E7`} 
+                    src={`https://www.google.com/maps/embed/v1/place?key=${GOOGLE_API_KEY}&q=840+Queens+Plate+Dr,+Etobicoke,+ON+M9W+0E7`} 
                 />
             </FormAndMap>
             

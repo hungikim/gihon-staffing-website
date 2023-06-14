@@ -54,6 +54,7 @@ export const PageSubHeading = styled.h2`
   font-size: 1.3em;
   margin: 2rem 0 1rem 0;
   font-weight: 600;
+  color: var(--stronger-color);
 `
 
 export const PageSubSubHeading = styled.h3`

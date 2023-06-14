@@ -36,7 +36,7 @@ export default function Home () {
         </section>
 
         <CardSection>
-            <CardHeading>
+            <CardHeading style={{color:"inherit"}}>
                 Industries We Serve
             </CardHeading>
             <IndustriesWeServe>
@@ -60,6 +60,7 @@ export default function Home () {
 }
 
 const IndustriesWeServe = styled.ul`
+    list-style: disc;
     @media (min-width: 769px) {
         display: grid;
         grid-template-rows: repeat(auto-fit, 1fr);

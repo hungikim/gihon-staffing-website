@@ -15,13 +15,15 @@ export default function Contact() {
             <p>
                 We encourage you to contact us using one of the methods below.<br/>
                 <br/>
+                <b>
                 840 Queens Plate Dr, Toronto<br/>
                 ON M9W 0E7<br/>
                 <br/>
-                M: 647 545 0922<br/>
+                M: <a href="tel:6475450922">647 545 0922</a><br/>
                 O: 647 794 7845<br/>
                 E: <a href='mailto: gihon.toronto@gmail.com'>gihon.toronto@gmail.com</a><br/>
                 <br/>
+                </b>
                 Or simply fill out the forms below and send to us. We enjoy hearing from you!<br/><br/>
             </p>
             <FormAndMap>

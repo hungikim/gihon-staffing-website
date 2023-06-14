@@ -48,17 +48,16 @@ export default function Employers() {
             </PlacementOptions>
         
             <PageSubHeading>We provide solutions in several types of employment relationships</PageSubHeading>
-            <ul>
+            <ul style={{listStyle:"disc"}}>
                 <li>Contract-to-Hire</li>
                 <li>Long-term & Short-term Projects</li>
                 <li>Direct Placement</li>
             </ul>
             
-            <Border/>
             <CardSection>
-              <CardHeading style={{marginBottom: 0}}>Our Search Process For Your Business</CardHeading>
+              <CardHeading style={{marginBottom: 0, color:'inherit'}}>Our Search Process For Your Business</CardHeading>
               <SearchProcess>
-                <div>
+                <li>
                   <PageSubSubHeading style={{color:'var(--bg-color)'}}>Needs Analysis</PageSubSubHeading>
                   <ol>
                     <li>
@@ -70,8 +69,8 @@ export default function Employers() {
                       <ListText>Discuss and agree on detailed position specification</ListText>
                     </li>
                   </ol>
-                </div>
-                <div>
+                </li>
+                <li>
                   <PageSubSubHeading style={{color:'var(--bg-color)'}}>Sourcing & Selection</PageSubSubHeading>
                   <ol>
                     <li>
@@ -91,8 +90,8 @@ export default function Employers() {
                       <ListText>Present selected candidates to the client</ListText>
                     </li>
                   </ol>
-                </div>
-                <div>
+                </li>
+                <li>
                   <PageSubSubHeading style={{color:'var(--bg-color)'}}>Interview & Closing</PageSubSubHeading>
                   <ol>
                     <li>
@@ -108,7 +107,7 @@ export default function Employers() {
                       <ListText>Negotiation finalized with offer signed</ListText>
                     </li>
                   </ol>
-                </div>
+                </li>
               </SearchProcess>
             </CardSection>
           </PageContent>
@@ -121,13 +120,16 @@ const PlacementOptions = styled.ul`
   > * { margin: 1.2rem 0;}
 `
 
-const SearchProcess = styled.div`
+const SearchProcess = styled.ol`
   display: flex;
   margin-left: 1rem;
   gap: 20px;
   > * { flex-grow: 1; flex-basis: 33%;}
   li { font-size: 1em; }
-
+  li ol {
+    list-style: upper-alpha;
+    padding-left: 1rem;
+  }
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 0;
@@ -142,3 +144,4 @@ const ListText = styled.p`
   font-weight: 200;
   font-size: 0.9em;
 `
+

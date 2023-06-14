@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { EmploymentImg, Banner, PageHeading, PageWrapper, PageSubHeading, PageContent, Border } from "./Pages.styled"
+import { EmploymentImg, Banner, PageHeading, PageWrapper, PageSubHeading, PageContent, Border, CardSection, CardHeading } from "./Pages.styled"
 import employmentImg from '../assets/employment1.jpg'
 
 export default function Home () {
@@ -35,10 +35,10 @@ export default function Home () {
             </ul>
         </section>
 
-            <Border/>
-            <PageSubHeading>
+        <CardSection>
+            <CardHeading>
                 Industries We Serve
-            </PageSubHeading>
+            </CardHeading>
             <IndustriesWeServe>
                 <li>Customer Service</li>
                 <li>Sales</li>
@@ -53,6 +53,7 @@ export default function Home () {
                 <li>Warehouse & Distribution</li>
                 <li>Language Interpretation and Translation</li>
             </IndustriesWeServe>
+        </CardSection>
       </PageContent>
     </PageWrapper>
 )

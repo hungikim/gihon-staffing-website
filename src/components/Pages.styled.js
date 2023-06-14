@@ -60,9 +60,22 @@ export const PageSubSubHeading = styled.h3`
   font-size: 1.15em;
   margin: 1rem 0 0.5rem 0;
   font-weight: 500;
+  color: var(--stronger-color);
 `
 
 export const Border = styled.div`
   margin: 35px 0;
   border: 1px solid var(--lighter-color);
+`
+
+export const CardSection = styled.section`
+  background: var(--stronger-color);
+  padding: 20px 50px 30px 50px;
+  margin-top: 50px;
+  color: var(--bg-color);
+  box-shadow: 5px 5px 15px var(--main-color);
+`
+
+export const CardHeading = styled(PageSubHeading)`
+  margin: 15px 0 20px 0;
 `

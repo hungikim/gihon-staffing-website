@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { PageHeading, Banner, PageSubHeading, PageWrapper, PageContent, EmploymentImg, Border, CardSection, CardHeading } from "./Pages.styled"
+import { PageHeading, Banner, PageSubHeading, PageWrapper, PageContent, EmploymentImg, Border, CardSection, CardHeading, PageText } from "./Pages.styled"
 import employmentImg from '/src/assets/laptop.jpg'
 import BNXLogo from '/src/assets/BNX.png'
 import GinsengLogo from '/src/assets/Ginseng.png'
@@ -17,12 +17,13 @@ export default function JobSeekers () {
             <PageHeading>Job Seekers</PageHeading>
           </Banner>
           <PageContent>
+            <PageText>
               <p>
                 &emsp;&emsp;At Gihon Networks Corp. we believe in working toegether as a team to ensure an effective working relationship. 
                 Whether you are seeking a temporary, contract of permanent position, our qualified recruitment specialists will
                 match you with a postion that fits your goals and experience.
               </p>
-            
+
               <PageSubHeading>Where to Begin</PageSubHeading>
               <ul style={{ listStyleType: '—  '}}>
                 <li>Applications are accepted in person only.</li>
@@ -45,35 +46,61 @@ export default function JobSeekers () {
                 &emsp;&emsp;Send us your resume to <a href=""><b>gihon.toronto@gmail.com</b></a>.<br/>
                 &emsp;&emsp;Once submitted one of our recruiters will contact you to advance with the process.
               </p>
+            </PageText>
 
-              <PartnersSection>
-                <CardHeading>Our Clients & Partners</CardHeading>
-                <Partners>
-                  <li><LogoImg src={BNXLogo}/><br/>
-                    BNX Shipping Toronto Inc.
-                  </li>
-                  <li><img src={GinsengLogo} width='250px' height='45px'/><br/>
-                    Korea Ginseng corp.
-                  </li>
-                  <li><LogoImg src={HankookLogo}/><br/>
-                    Hankook Tire Canada Corp.
-                  </li>
-                  <li><img src={PantosLogo} width='200px' height='60px'/><br/>
-                    Pantos Logistics Canada Inc.
-                  </li>
-                  <li><LogoImg src={NongshimLogo}/><br/>
-                    Nongshim America
-                  </li>
-                  <li><LogoImg src={GlovisLogo}/><br/>
-                    Hyundai Glovis
-                  </li>
-                  <li><img src={LGLogo} width='160px' height='80px'/><br/>
-                    LG Electronics
-                  </li>
-                  <li style={{listStyle:'none', margin:'1rem 0 0 -1rem'}}>... and more</li>
-                </Partners>
-              </PartnersSection>
+            <PartnersSection>
+              <CardHeading style={{color:'var(--main-color)', textAlign:'center', fontSize:'1.2em', marginBottom:'2.5rem'}}>
+                Our Clients & Partners
+              </CardHeading>
+              <Partners>
+                <li>
+                  <LogoImgContainer>
+                    <LogoImg src={BNXLogo}/>
+                  </LogoImgContainer>
+                  BNX Shipping Inc.
+                </li>
+                <li>
+                  <LogoImgContainer>
+                    <LogoImg src={GinsengLogo} style={{ width:'200px', height:'40px' }}/>
+                  </LogoImgContainer>
+                  Korea Ginseng Corp
+                </li>
+                <li>
+                  <LogoImgContainer>
+                    <LogoImg src={HankookLogo}/>
+                  </LogoImgContainer>
+                  Hankook Tire Canada
+                </li>
+                <li>
+                  <LogoImgContainer>
+                    <LogoImg src={PantosLogo} style={{ width:'130px', height:'40px' }}/>
+                  </LogoImgContainer>
+                  Pantos Canada
+                </li>
+                <li>
+                  <LogoImgContainer>
+                    <LogoImg src={NongshimLogo}/>
+                  </LogoImgContainer>
+                  Nongshim America
+                </li>
+                <li>
+                  <LogoImgContainer>
+                    <LogoImg src={GlovisLogo}/>
+                  </LogoImgContainer>
+                  Hyundai Glovis
+                </li>
+                <li>
+                  <LogoImgContainer>
+                    <LogoImg src={LGLogo} style={{ width:'70px', height:'40px' }}/>
+                  </LogoImgContainer>
+                  LG Electronics
+                </li>
+                <li style={{boxShadow:'none', alignSelf:'end'}}>... and more</li>
+              </Partners>
+            </PartnersSection>
+
           </PageContent>
+
         </PageWrapper>
     )
 }
@@ -81,18 +108,46 @@ export default function JobSeekers () {
 const Partners = styled.ul`
   list-style: none;
   font-size: 0.9em;
-  font-weight: 400;
+  font-weight: 500;
+  padding: 0;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+  }
 
   @media (min-width: 769px) {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    gap: 10px 0px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 0 5vw;
+  }
+  @media (max-width: 768px) {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    li { padding: 10px 0; box-shadow: none;}
   }
 `
 
-const LogoImg = styled.img`
+const LogoImgContainer = styled.div`
   width: 250px;
-  height: 60px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--main-color);
+`
+
+const LogoImg = styled.img`
+  width: 180px;
+  height: 50px;
 `
 
 const PartnersSection = styled(CardSection)`

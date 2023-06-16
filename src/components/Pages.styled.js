@@ -41,20 +41,16 @@ export const PageHeading = styled.h1`
 
 export const PageContent = styled.section`
   position: relative;
-  @media (max-width: 768px) {
-    padding: 2rem;
-  }
-
-  @media (min-width: 769px) {
-    padding: 3rem 13vw;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 export const PageSubHeading = styled.h2`
   font-size: 1.3em;
   margin: 2rem 0 1rem 0;
   font-weight: 600;
-  color: var(--stronger-color);
+  color: purple;
 `
 
 export const PageSubSubHeading = styled.h3`
@@ -70,13 +66,30 @@ export const Border = styled.div`
 `
 
 export const CardSection = styled.section`
-  background: var(--stronger-color);
+  background: #7086b0;
   padding: 20px 50px 30px 50px;
-  margin-top: 50px;
+  width: clamp(200px, 90vw, 1300px);
+  margin-bottom: 50px;
   color: var(--bg-color);
   box-shadow: 5px 5px 15px var(--main-color);
+
+  @media (max-width: 768px) {
+    padding: 10px 40px 20px 40px;
+    width: 90vw;
+  }
 `
 
 export const CardHeading = styled(PageSubHeading)`
+  text-align: center;
   margin: 15px 0 20px 0;
+`
+
+export const PageText = styled.section`
+  @media (max-width: 768px) {
+    padding: 2rem;
+  }
+
+  @media (min-width: 769px) {
+    padding: 3rem 13vw;
+  }
 `

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { EmploymentImg, Banner, PageHeading, PageWrapper, PageSubHeading, PageContent, Border, CardSection, CardHeading } from "./Pages.styled"
+import { EmploymentImg, Banner, PageHeading, PageWrapper, PageSubHeading, PageContent, Border, CardSection, CardHeading, PageText } from "./Pages.styled"
 import employmentImg from '../assets/employment1.jpg'
 
 export default function Home () {
@@ -14,8 +14,8 @@ export default function Home () {
       
       <PageContent>
 
-        <section>
-            <ul>
+        <PageText>
+            <SectionedUL>
                 <li>
                     Serving the Greater Toronto Area, Southern Ontario, and beyond.         
                 </li>
@@ -32,8 +32,8 @@ export default function Home () {
                     As the pace of technology increases, our clients, representing a broad spectrum of industries, have come to expect more from us.
                     Through our commitment to expanding our services and our efforts to keep pace with new technology, we are able to meet these rising demands.
                 </li>
-            </ul>
-        </section>
+            </SectionedUL>
+        </PageText>
 
         <CardSection>
             <CardHeading style={{color:"inherit"}}>
@@ -59,11 +59,21 @@ export default function Home () {
 )
 }
 
+const SectionedUL = styled.ul`
+
+`
+
 const IndustriesWeServe = styled.ul`
     list-style: disc;
     @media (min-width: 769px) {
         display: grid;
         grid-template-rows: repeat(auto-fit, 1fr);
         grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        > li {width: 80%;}
+    }
+
+    @media (max-width: 768px) {
+        padding-left: 1.5rem;
     }
 `

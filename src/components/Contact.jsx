@@ -8,12 +8,11 @@ export default function Contact() {
     return (
         <PageWrapper id="Contact">
           <Banner>
-            <EmploymentImg src={employmentImg} />
+            <EmploymentImg src={employmentImg}/>
             <PageHeading>Contact</PageHeading>
           </Banner>
           <ContactContent>
             <PageText>
-              
                   We encourage you to contact us using one of the methods below.<br/><br/>
                   <Contacts>
                     <div>
@@ -31,7 +30,7 @@ export default function Contact() {
               
               <FormAndMap>
                   <ContactForm name="contact-form"/>
-                  <iframe
+                  <Map
                       width="480"
                       height="360"
                       style={{border:'1px solid var(--lighter-color)'}}
@@ -48,28 +47,36 @@ export default function Contact() {
 }
 
 const ContactContent = styled(PageContent)`
-  margin-top: 0;
   font-size: 1em;
+  background: cyan;
+  box-shadow: 2px 2px 12px;
 
+  @media (min-width: 769px) {
+    margin: 0 10vw 100px 10vw;
+  }
+  @media (max-width: 768px) {
+    margin: 0 10px 30px 10px;
+  }
 `
 
 const FormAndMap = styled.div`
   display: flex;
   gap: 50px;
   flex-wrap: wrap;
+
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 25px;
-    iframe {
-        width: 80vw;
-        height: 40vh;
-    }
   }
+`
 
+const Map = styled.iframe`
   @media (min-width: 769px) {
-    iframe {
-        flex-grow: 1;
-    }
+    flex-grow: 1;
+  }
+  @media (max-width: 768px) {
+    width: 80vw;
+    height: 40vh;
   }
 `
 

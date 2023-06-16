@@ -6,7 +6,7 @@ export default function LiCollapsable(props) {
     const [open, setOpen] = useState(false)
     const contentRef = useRef()
     return (
-        <li>
+        <LI>
             <CollapsableSubSubHeading onClick={()=>setOpen(open? false: true)}>
                 { props.heading }
                 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
@@ -21,9 +21,14 @@ export default function LiCollapsable(props) {
             <CollapsableContent ref={contentRef} style={open? { height: contentRef.current.scrollHeight+'px', margin: '10px 0' } : { height: '0px' }}>
                 {props.children}
             </CollapsableContent>
-        </li>
+        </LI>
     )
 }
+
+const LI = styled.li`
+    margin: 5px 0;
+    list-style-type: none;
+`
 
 const CollapsableSubSubHeading = styled(PageSubSubHeading)`
     display: flex;
@@ -33,7 +38,7 @@ const CollapsableSubSubHeading = styled(PageSubSubHeading)`
     margin: 0;
     background: var(--stronger-color);
     width: 100%;
-    padding: 2px 12px;
+    padding: 2px 20px;
     color: var(--bg-color);
 `
 

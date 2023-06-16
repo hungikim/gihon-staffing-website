@@ -61,7 +61,7 @@ export default function JobSeekers () {
                 </li>
                 <li>
                   <LogoImgContainer>
-                    <LogoImg src={GinsengLogo} style={{ width:'200px', height:'40px' }}/>
+                    <LogoImg src={GinsengLogo} style={{ width:'220px', height:'40px' }}/>
                   </LogoImgContainer>
                   Korea Ginseng Corp
                 </li>
@@ -73,7 +73,7 @@ export default function JobSeekers () {
                 </li>
                 <li>
                   <LogoImgContainer>
-                    <LogoImg src={PantosLogo} style={{ width:'130px', height:'40px' }}/>
+                    <LogoImg src={PantosLogo} style={{ width:'200px', height:'70px' }}/>
                   </LogoImgContainer>
                   Pantos Canada
                 </li>
@@ -85,13 +85,13 @@ export default function JobSeekers () {
                 </li>
                 <li>
                   <LogoImgContainer>
-                    <LogoImg src={GlovisLogo}/>
+                    <LogoImg src={GlovisLogo} style={{ width:'170px', height:'50px' }}/>
                   </LogoImgContainer>
                   Hyundai Glovis
                 </li>
                 <li>
                   <LogoImgContainer>
-                    <LogoImg src={LGLogo} style={{ width:'70px', height:'40px' }}/>
+                    <LogoImg src={LGLogo} style={{ width:'100px', height:'55px' }}/>
                   </LogoImgContainer>
                   LG Electronics
                 </li>
@@ -121,7 +121,7 @@ const Partners = styled.ul`
 
   @media (min-width: 769px) {
     display: grid;
-    gap: 10px 0px;
+    gap: 30px 0px;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
@@ -142,11 +142,11 @@ const LogoImgContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid var(--main-color);
+  border: 2px solid #a0b9e6;
 `
 
 const LogoImg = styled.img`
-  width: 180px;
+  width: 200px;
   height: 50px;
 `
 

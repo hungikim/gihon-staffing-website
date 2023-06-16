@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import { PageHeading, Banner, PageSubHeading, PageWrapper, PageSubSubHeading, EmploymentImg, PageContent, PageText, CardSection, CardHeading } from "./Pages.styled";
+import { PageHeading, Banner, PageSubHeading, PageWrapper, PageSubSubHeading, EmploymentImg, PageContent, PageText } from "./Pages.styled";
 import employmentImg from '/src/assets/employment2.jpg'
 import LiCollapsable from "./Collapsable";
+import OurSearchProcess from './OurSearchProcess'
 
 export default function Employers() {
     return (
@@ -57,62 +58,7 @@ export default function Employers() {
               </ul>
             </PageText>
 
-            <CardSection>
-              <CardHeading style={{color:'inherit'}}>Our Search Process For Your Business</CardHeading>
-              <SearchProcess>
-                <li>
-                  <PageSubSubHeading style={{color:'var(--bg-color)'}}>Needs Analysis</PageSubSubHeading>
-                  <ol>
-                    <li>
-                      <ListTitle>Pre-Consulting</ListTitle>
-                      <ListText>Discuss and analyze company needs and information</ListText>
-                    </li>
-                    <li>
-                      <ListTitle>Profile Tuning</ListTitle>
-                      <ListText>Discuss and agree on detailed position specification</ListText>
-                    </li>
-                  </ol>
-                </li>
-                <li>
-                  <PageSubSubHeading style={{color:'var(--bg-color)'}}>Sourcing & Selection</PageSubSubHeading>
-                  <ol>
-                    <li>
-                      <ListTitle>Sourcing</ListTitle>
-                      <ListText>On/Offline Target Sourcing (Long List)</ListText>
-                    </li>
-                    <li>
-                      <ListTitle>Selection</ListTitle>
-                      <ListText>Screen long list candidate via phone interview (Short List)</ListText>
-                    </li>
-                    <li>
-                      <ListTitle>Pre-Interview</ListTitle>
-                      <ListText>Screen candidates via full & formal interviews</ListText>
-                    </li>
-                    <li>
-                      <ListTitle>Recommendation</ListTitle>
-                      <ListText>Present selected candidates to the client</ListText>
-                    </li>
-                  </ol>
-                </li>
-                <li>
-                  <PageSubSubHeading style={{color:'var(--bg-color)'}}>Interview & Closing</PageSubSubHeading>
-                  <ol>
-                    <li>
-                      <ListTitle>Client Interview</ListTitle>
-                      <ListText>Client interview with selected candidates</ListText>
-                    </li>
-                    <li>
-                      <ListTitle>Offer & Counter-offer</ListTitle>
-                      <ListText>Compensation offer to the finalist</ListText>
-                    </li>
-                    <li>
-                      <ListTitle>Finalization</ListTitle>
-                      <ListText>Negotiation finalized with offer signed</ListText>
-                    </li>
-                  </ol>
-                </li>
-              </SearchProcess>
-            </CardSection>
+            <OurSearchProcess/>
 
           </PageContent>
 
@@ -122,41 +68,9 @@ export default function Employers() {
 
 const PlacementOptions = styled.ul`
   list-style-type: disc;
-  li {
-    margin: 5px 0;
-  }
+  padding-left: 15px;
 `
 
-const SearchProcess = styled.ol`
-  display: flex;
-  margin-left: 1rem;
-  gap: 100px;
-  > li {
-    flex-grow: 1;
-    flex-basis: 33%;
-    font-size: 1em;
-  }
-  > li ol {
-    list-style: upper-alpha;
-    padding-left: 1rem;
-  }
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 10px;
-    margin-left:0;
-    li { margin-bottom: 5px; }
-  }
-`
-
-const ListTitle = styled.h4`
-  font-weight: 400;
-  font-size: 1em;
-`
-const ListText = styled.p`
-  font-weight: 200;
-  font-size: 0.9em;
-`
 
 const CollapsableSubSubHeading = styled(PageSubSubHeading)`
   

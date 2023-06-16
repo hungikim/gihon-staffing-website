@@ -15,7 +15,7 @@ export default function Home () {
       <PageContent>
 
         <PageText>
-            <SectionedUL>
+            <UL>
                 <li>
                     Serving the Greater Toronto Area, Southern Ontario, and beyond.         
                 </li>
@@ -32,7 +32,7 @@ export default function Home () {
                     As the pace of technology increases, our clients, representing a broad spectrum of industries, have come to expect more from us.
                     Through our commitment to expanding our services and our efforts to keep pace with new technology, we are able to meet these rising demands.
                 </li>
-            </SectionedUL>
+            </UL>
         </PageText>
 
         <CardSection>
@@ -41,16 +41,19 @@ export default function Home () {
             </CardHeading>
             <IndustriesWeServe>
                 <li>Customer Service</li>
-                <li>Sales</li>
-                <li>Help Desk</li>
-                <li>Office Support</li>
-                <li>Clerical & Administrative</li>
-                <li>Banking</li>
-                <li>Call Center</li>
-                <li>Accounting</li>
-                <li>Manufacturing</li>
-                <li>Maintenance Tech</li>
                 <li>Warehouse & Distribution</li>
+                <li>Office Support</li>
+                
+                <li>Help Desk</li>
+                <li>Maintenance Tech</li>
+                <li>Banking</li>
+
+                <li>Call Center</li>
+                <li>Manufacturing</li>
+                <li>Accounting</li>
+
+                <li>Sales</li>
+                <li>Clerical & Administrative</li>
                 <li>Language Interpretation and Translation</li>
             </IndustriesWeServe>
         </CardSection>
@@ -59,8 +62,10 @@ export default function Home () {
 )
 }
 
-const SectionedUL = styled.ul`
-
+const UL = styled.ul`
+    li {
+        margin: 15px;
+    }
 `
 
 const IndustriesWeServe = styled.ul`
@@ -68,7 +73,7 @@ const IndustriesWeServe = styled.ul`
     @media (min-width: 769px) {
         display: grid;
         grid-template-rows: repeat(auto-fit, 1fr);
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-items: center;
         > li {width: 80%;}
     }

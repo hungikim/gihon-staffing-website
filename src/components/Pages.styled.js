@@ -20,7 +20,6 @@ export const EmploymentImg = styled.img`
   filter: brightness(70%);
   object-fit: cover;
   z-index: -1;
-
   @media (max-width: 768px) {
     height: 200px;
   }
@@ -29,13 +28,11 @@ export const EmploymentImg = styled.img`
 export const PageHeading = styled.h1`
   position: absolute;
   padding: 0 10vw;
-  bottom: 3rem;
+  bottom: 15%;
   color: var(--bg-color);
-
   @media (max-width: 768px) {
     font-size: 1.5em;
     padding: 0 2rem;
-    bottom: 2rem;
   }
 `
 
@@ -66,11 +63,11 @@ export const Border = styled.div`
 `
 
 export const CardSection = styled.section`
-  background: #7086b0;
+  /* background: #7086b0; */  
+  /* color: var(--bg-color); */
   padding: 20px 50px 30px 50px;
   width: clamp(200px, 90vw, 1300px);
   margin-bottom: 50px;
-  color: var(--bg-color);
   box-shadow: 5px 5px 15px var(--main-color);
 
   @media (max-width: 768px) {

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { PageHeading, Banner, PageSubHeading, PageWrapper, PageContent, EmploymentImg, Border, CardSection, CardHeading, PageText } from "./Pages.styled"
+import { PageHeading, Banner, PageSubHeading, PageSubSubHeading, PageWrapper, PageContent, EmploymentImg, CardSection, CardHeading, PageText } from "./Pages.styled"
 import employmentImg from '/src/assets/laptop.jpg'
 import BNXLogo from '/src/assets/BNX.png'
 import GinsengLogo from '/src/assets/Ginseng.png'
@@ -24,28 +24,33 @@ export default function JobSeekers () {
                 match you with a postion that fits your goals and experience.
               </p>
 
-              <PageSubHeading>Where to Begin</PageSubHeading>
-              <ul style={{ listStyleType: '—  '}}>
-                <li>Applications are accepted in person only.</li>
-                <li>
-                    When applying, please ensure that you have two pieces of identification:<br/>
-                    <b>Social Insurance Number</b> and a <b>Goverment photo id</b> (ie: driver's license or passport).
-                </li>
-                <li>If you currently hold a temporary social insurance number (900 series), please bring along your work permit as well.</li>
-              </ul>
+              <WhereToBegin>
+                <PageSubHeading>Where to Begin</PageSubHeading>
+                <ul>
+                  <li>Applications are accepted in person only.</li>
+                  <li>
+                      When applying, please ensure that you have two pieces of identification:<br/>
+                      <b>Social Insurance Number</b> and a <b>Goverment photo id</b> (ie: driver's license or passport).
+                  </li>
+                  <li>If you currently hold a temporary social insurance number (900 series), please bring along your work permit as well.</li>
+                </ul>
+              </WhereToBegin>
             
-              <PageSubHeading>We provide solutions in several types of employment relationships</PageSubHeading>
+              <PageSubSubHeading style={{fontSize:'1.05em'}}>We provide solutions in several types of employment relationships</PageSubSubHeading>
               <ul style={{listStyle:"disc"}}>
                 <li>Contract-to-Hire</li>
                 <li>Long-term & Short-term Projects</li>
                 <li>Direct Placement</li>
               </ul>
-            
-              <PageSubHeading>Submit your resume to begin your job search today!</PageSubHeading>
+
+              
+              <PageSubHeading style={{textAlign:'left'}}>Submit your resume to begin your job search today!</PageSubHeading>
               <p>
                 &emsp;&emsp;Send us your resume to <a href=""><b>gihon.toronto@gmail.com</b></a>.<br/>
                 &emsp;&emsp;Once submitted one of our recruiters will contact you to advance with the process.
               </p>
+              
+
             </PageText>
 
             <PartnersSection>
@@ -167,5 +172,18 @@ const PartnersHeading = styled(CardHeading)`
 const AndMore = styled.li`
   @media (min-width: 769px) {
     align-self: end;
+  }
+`
+
+const WhereToBegin = styled.div`
+  @media (min-width: 769px){
+    margin: 50px 0;
+    display: flex;
+    gap: 40px;
+    ${PageSubHeading} { white-space: nowrap; }
+
+    ul {
+      padding-top: 1.3em;
+    }
   }
 `

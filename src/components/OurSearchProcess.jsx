@@ -19,41 +19,45 @@ export default function OurSearchProcess() {
     return () => window.removeEventListener("resize", listener);
   }, [isMobile, query]);
 
+  const mobileHeadingStyle = {
+    background: "white",
+    color: "var(--stronger-color)"
+  }
+
   return (
     <Wrapper>
       <CardHeading style={{ color: "var(--main-color)" }}>
         Our Search Process For Your Business
       </CardHeading>
-      <OL>
-        {isMobile ? (
-          <>
-            <LiCollapsable heading="1. Needs Analysis">
-              <LiChild1 />
-            </LiCollapsable>
-            <LiCollapsable heading="2. Sourcing & Selection">
-              <LiChild2 />
-            </LiCollapsable>
-            <LiCollapsable heading="3. Interview & Closing">
-              <LiChild3 />
-            </LiCollapsable>
-          </>
-        ) : (
-          <>
-            <LI>
-              <LIHeading>Needs Analysis</LIHeading>
-              <LiChild1 />
-            </LI>
-            <LI>
-              <LIHeading>Sourcing & Selection</LIHeading>
-              <LiChild2 />
-            </LI>
-            <LI>
-              <LIHeading>Interview & Closing</LIHeading>
-              <LiChild3 />
-            </LI>
-          </>
-        )}
-      </OL>
+      
+      {isMobile ? (
+        <OL style={{gap:0}}>
+          <LiCollapsable heading="1. Needs Analysis" headingStyle={mobileHeadingStyle}>
+            <LiChild1 />
+          </LiCollapsable>
+          <LiCollapsable heading="2. Sourcing & Selection" headingStyle={mobileHeadingStyle}>
+            <LiChild2 />
+          </LiCollapsable>
+          <LiCollapsable heading="3. Interview & Closing" headingStyle={mobileHeadingStyle}>
+            <LiChild3 />
+          </LiCollapsable>
+        </OL>
+      ) : (
+        <OL>
+          <LI>
+            <LIHeading>Needs Analysis</LIHeading>
+            <LiChild1 />
+          </LI>
+          <LI>
+            <LIHeading>Sourcing & Selection</LIHeading>
+            <LiChild2 />
+          </LI>
+          <LI>
+            <LIHeading>Interview & Closing</LIHeading>
+            <LiChild3 />
+          </LI>
+        </OL>
+      )}
     </Wrapper>
   );
 }

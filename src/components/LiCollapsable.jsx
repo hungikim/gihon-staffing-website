@@ -7,7 +7,7 @@ export default function LiCollapsable(props) {
     const contentRef = useRef()
     return (
         <LI>
-            <CollapsableSubSubHeading onClick={()=>setOpen(open? false: true)}>
+            <CollapsableSubSubHeading onClick={()=>setOpen(open? false: true)} style={props.headingStyle}>
                 { props.heading }
                 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
                 {open? 

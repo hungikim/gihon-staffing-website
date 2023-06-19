@@ -40,6 +40,7 @@ const CollapsableSubSubHeading = styled(PageSubSubHeading)`
     width: 100%;
     padding: 2px 20px;
     color: var(--bg-color);
+    cursor: pointer;
 `
 
 const CollapsableContent = styled.div`

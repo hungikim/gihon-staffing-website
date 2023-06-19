@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { PageHeading, Banner, PageSubHeading, PageWrapper, PageSubSubHeading, EmploymentImg, PageContent, PageText } from "./Pages.styled";
 import employmentImg from '/src/assets/employment2.jpg'
-import LiCollapsable from "./Collapsable";
+import LiCollapsable from "./LiCollapsable";
 import OurSearchProcess from './OurSearchProcess'
 
 export default function Employers() {

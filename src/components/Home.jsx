@@ -17,7 +17,7 @@ export default function Home () {
       
       <PageContent>
 
-        <PageText>
+        <PageText style={{paddingTop:'1rem'}}>
             <IntroUL>
                 <li>
                     Serving the Greater Toronto Area, Southern Ontario, and beyond.         

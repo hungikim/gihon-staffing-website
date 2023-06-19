@@ -116,9 +116,10 @@ const Partners = styled.ul`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
     padding: 5px 0;
+    white-space: nowrap;
   }
 
   @media (min-width: 769px) {
@@ -131,7 +132,8 @@ const Partners = styled.ul`
   }
   @media (max-width: 768px) {
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 20px 0px;
+    font-size: 0.8em;
   }
 `
 

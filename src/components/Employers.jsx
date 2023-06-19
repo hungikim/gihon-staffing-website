@@ -3,6 +3,7 @@ import { PageHeading, Banner, PageSubHeading, PageWrapper, PageSubSubHeading, Em
 import employmentImg from '/src/assets/employment2.jpg'
 import LiCollapsable from "./LiCollapsable";
 import OurSearchProcess from './OurSearchProcess'
+import { Solutions } from "./JobSeekers";
 
 export default function Employers() {
     return (
@@ -50,12 +51,8 @@ export default function Employers() {
                 </LiCollapsable>
               </PlacementOptions>
           
-              <PageSubHeading>We provide solutions in several types of employment relationships</PageSubHeading>
-              <ul style={{listStyle:"disc"}}>
-                  <li>Contract-to-Hire</li>
-                  <li>Long-term & Short-term Projects</li>
-                  <li>Direct Placement</li>
-              </ul>
+              <Solutions/>
+              
             </PageText>
 
             <OurSearchProcess/>

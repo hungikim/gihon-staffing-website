@@ -24,7 +24,7 @@ export default function JobSeekers () {
                 match you with a postion that fits your goals and experience.
               </p>
 
-              <WhereToBegin>
+              <HeadingAndList>
                 <PageSubHeading>Where to Begin</PageSubHeading>
                 <ul>
                   <li>Applications are accepted in person only.</li>
@@ -34,16 +34,10 @@ export default function JobSeekers () {
                   </li>
                   <li>If you currently hold a temporary social insurance number (900 series), please bring along your work permit as well.</li>
                 </ul>
-              </WhereToBegin>
-            
-              <PageSubSubHeading style={{fontSize:'1.05em'}}>We provide solutions in several types of employment relationships</PageSubSubHeading>
-              <ul style={{listStyle:"disc"}}>
-                <li>Contract-to-Hire</li>
-                <li>Long-term & Short-term Projects</li>
-                <li>Direct Placement</li>
-              </ul>
+              </HeadingAndList>
 
-              
+              <Solutions/>
+
               <PageSubHeading style={{textAlign:'left'}}>Submit your resume to begin your job search today!</PageSubHeading>
               <p>
                 &emsp;&emsp;Send us your resume to <a href=""><b>gihon.toronto@gmail.com</b></a>.<br/>
@@ -110,6 +104,17 @@ export default function JobSeekers () {
     )
 }
 
+export const Solutions = () => (
+  <HeadingAndList>
+  <PageSubSubHeading style={{fontSize:'1.05em'}}>We provide solutions<br/> in several types of employment relationships</PageSubSubHeading>
+  <ul style={{listStyle:"disc"}}>
+    <li>Contract-to-Hire</li>
+    <li>Long-term & Short-term Projects</li>
+    <li>Direct Placement</li>
+  </ul>
+  </HeadingAndList>
+)
+
 const Partners = styled.ul`
   display: grid;
   list-style: none;
@@ -175,9 +180,9 @@ const AndMore = styled.li`
   }
 `
 
-const WhereToBegin = styled.div`
+const HeadingAndList = styled.div`
   @media (min-width: 769px){
-    margin: 50px 0;
+    margin: 60px 0;
     display: flex;
     gap: 40px;
     ${PageSubHeading} { white-space: nowrap; }
@@ -185,5 +190,6 @@ const WhereToBegin = styled.div`
     ul {
       padding-top: 1.3em;
     }
+    /* * { outline: 1px solid;} */
   }
 `

@@ -14,7 +14,7 @@ export default function Employers() {
           </Banner>
 
           <PageContent>
-            <PageText>
+            <PageText style={{paddingBottom:0}}>
               <PageSubHeading style={{marginTop:0}}>Benefits of Using a Placement Service</PageSubHeading>
               <p>
                   &emsp;&emsp;As a professional placement service, we are able to provide you with labour flexibility
@@ -52,7 +52,7 @@ export default function Employers() {
               </PlacementOptions>
           
               <Solutions/>
-              
+
             </PageText>
 
             <OurSearchProcess/>

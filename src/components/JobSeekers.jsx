@@ -192,4 +192,7 @@ const HeadingAndList = styled.div`
     }
     /* * { outline: 1px solid;} */
   }
+  @media (max-width: 768px) {
+    margin: 40px 0;
+  }
 `

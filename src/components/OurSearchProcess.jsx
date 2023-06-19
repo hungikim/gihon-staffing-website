@@ -20,8 +20,9 @@ export default function OurSearchProcess() {
   }, [isMobile, query]);
 
   const mobileHeadingStyle = {
-    background: "white",
-    color: "var(--stronger-color)"
+    background: "var(--lighter-color)",
+    boxShadow: "1px 1px 2px",
+    color: "purple"
   }
 
   return (

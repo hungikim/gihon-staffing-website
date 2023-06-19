@@ -65,13 +65,14 @@ export const Border = styled.div`
 export const CardSection = styled.section`
   /* background: #7086b0; */  
   /* color: var(--bg-color); */
-  padding: 20px 50px 30px 50px;
+  padding: 30px 20px;
   width: clamp(200px, 90vw, 1300px);
   margin-bottom: 50px;
   box-shadow: 5px 5px 15px var(--main-color);
 
   @media (max-width: 768px) {
-    padding: 10px 40px 20px 40px;
+    padding: 10px 20px;
+    padding-bottom: 30px;
     width: 90vw;
   }
 `

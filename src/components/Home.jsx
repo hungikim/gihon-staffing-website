@@ -1,6 +1,9 @@
 import styled from "styled-components"
 import { EmploymentImg, Banner, PageHeading, PageWrapper, PageSubHeading, PageContent, Border, CardSection, CardHeading, PageText } from "./Pages.styled"
 import employmentImg from '../assets/employment1.jpg'
+import headsetIcon from '../assets/headphone-headset-icon.svg'
+import settingsIcon from '../assets/settings-icon.svg'
+import documentIcon from '../assets/text-documents-line-icon.svg'
 
 export default function Home () {
   return (
@@ -15,7 +18,7 @@ export default function Home () {
       <PageContent>
 
         <PageText>
-            <UL>
+            <IntroUL>
                 <li>
                     Serving the Greater Toronto Area, Southern Ontario, and beyond.         
                 </li>
@@ -32,29 +35,44 @@ export default function Home () {
                     As the pace of technology increases, our clients, representing a broad spectrum of industries, have come to expect more from us.
                     Through our commitment to expanding our services and our efforts to keep pace with new technology, we are able to meet these rising demands.
                 </li>
-            </UL>
+            </IntroUL>
         </PageText>
 
         <CardSection>
-            <CardHeading style={{color:"inherit"}}>
+            <CardHeading style={{color:"inherit", marginBottom:'2.5rem'}}>
                 Industries We Serve
             </CardHeading>
             <IndustriesWeServe>
-                <li>Customer Service</li>
-                <li>Warehouse & Distribution</li>
-                <li>Office Support</li>
-                
-                <li>Help Desk</li>
-                <li>Maintenance Tech</li>
-                <li>Banking</li>
+                <Industries>
+                    <Industry>
+                        <IndustryIcon src={headsetIcon} width='60px' height='60px'/>
+                        <IndustryName>Customer Service</IndustryName>
+                        <IndustryName>Help Desk</IndustryName>
+                        <IndustryName>Call Center</IndustryName>
+                        <IndustryName>Office Support</IndustryName>
+                    </Industry>
+                </Industries>
 
-                <li>Call Center</li>
-                <li>Manufacturing</li>
-                <li>Accounting</li>
+                <Industries>
+                    <Industry>
+                        <IndustryIcon src={settingsIcon} width='60px' height='60px'/>
+                        <IndustryName>Warehouse & Distribution</IndustryName>
+                        <IndustryName>Maintenance Tech</IndustryName>
+                        <IndustryName>Manufacturing</IndustryName>
+                        <IndustryName>Sales</IndustryName>
+                    </Industry>
+                </Industries>
 
-                <li>Sales</li>
-                <li>Clerical & Administrative</li>
-                <li>Language Interpretation and Translation</li>
+                <Industries>
+                    <Industry>
+                        <IndustryIcon src={documentIcon} width='60px' height='60px'/>
+                        <IndustryName>Banking</IndustryName>
+                        <IndustryName>Accounting</IndustryName>
+                        <IndustryName>Clerical & Administrative</IndustryName>
+                        <IndustryName>Language Interpretation and Translation</IndustryName>
+                    </Industry>
+                </Industries>
+
             </IndustriesWeServe>
         </CardSection>
       </PageContent>
@@ -62,23 +80,48 @@ export default function Home () {
 )
 }
 
-const UL = styled.ul`
+const IntroUL = styled.ul`
+    padding-left: 1rem;
     li {
         margin: 15px;
     }
 `
 
 const IndustriesWeServe = styled.ul`
-    list-style: disc;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+
     @media (min-width: 769px) {
-        display: grid;
-        grid-template-rows: repeat(auto-fit, 1fr);
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        justify-items: center;
-        > li {width: 80%;}
+        padding: 0 50px;
     }
 
     @media (max-width: 768px) {
-        padding-left: 1.5rem;
+        flex-direction: column;
     }
+
+    /* * { outline: 1px solid black;} */
+`
+
+const Industries = styled.li`
+    flex: 1 1 0;
+`
+
+const Industry = styled.ul`
+    list-style-type: disc;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    /* outline: 1px solid ; */
+`
+
+const IndustryIcon = styled.img`
+    margin-bottom: 1rem;
+`
+
+const IndustryName = styled.li`
+    width: 250px;
 `

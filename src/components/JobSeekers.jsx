@@ -49,19 +49,19 @@ export default function JobSeekers () {
             </PageText>
 
             <PartnersSection>
-              <CardHeading style={{color:'var(--main-color)', textAlign:'center', fontSize:'1.2em', marginBottom:'2.5rem'}}>
+              <PartnersHeading>
                 Our Clients & Partners
-              </CardHeading>
+              </PartnersHeading>
               <Partners>
                 <li>
                   <LogoImgContainer>
-                    <LogoImg src={BNXLogo}/>
+                    <LogoImg src={BNXLogo} aspectRatio='235/51'/>
                   </LogoImgContainer>
                   BNX Shipping Inc.
                 </li>
                 <li>
                   <LogoImgContainer>
-                    <LogoImg src={GinsengLogo} style={{ width:'220px', height:'40px' }}/>
+                    <LogoImg src={GinsengLogo} aspectRatio='400/70'/>
                   </LogoImgContainer>
                   Korea Ginseng Corp
                 </li>
@@ -73,29 +73,29 @@ export default function JobSeekers () {
                 </li>
                 <li>
                   <LogoImgContainer>
-                    <LogoImg src={PantosLogo} style={{ width:'200px', height:'70px' }}/>
+                    <LogoImg src={PantosLogo} aspectRatio='424/133'/>
                   </LogoImgContainer>
                   Pantos Canada
                 </li>
                 <li>
                   <LogoImgContainer>
-                    <LogoImg src={NongshimLogo}/>
+                    <LogoImg src={NongshimLogo} aspectRatio='983/254'/>
                   </LogoImgContainer>
                   Nongshim America
                 </li>
                 <li>
                   <LogoImgContainer>
-                    <LogoImg src={GlovisLogo} style={{ width:'170px', height:'50px' }}/>
+                    <LogoImg src={GlovisLogo} aspectRatio='313/83'/>
                   </LogoImgContainer>
                   Hyundai Glovis
                 </li>
                 <li>
                   <LogoImgContainer>
-                    <LogoImg src={LGLogo} style={{ width:'100px', height:'55px' }}/>
+                    <LogoImg src={LGLogo} aspectRatio='196/106'/>
                   </LogoImgContainer>
                   LG Electronics
                 </li>
-                <li style={{boxShadow:'none', alignSelf:'end'}}>... and more</li>
+                <AndMore>... and more</AndMore>
               </Partners>
             </PartnersSection>
 
@@ -106,6 +106,7 @@ export default function JobSeekers () {
 }
 
 const Partners = styled.ul`
+  display: grid;
   list-style: none;
   font-size: 0.9em;
   font-weight: 500;
@@ -117,6 +118,7 @@ const Partners = styled.ul`
     justify-content: space-evenly;
     gap: 10px;
     align-items: center;
+    padding: 5px 0;
   }
 
   @media (min-width: 769px) {
@@ -128,30 +130,40 @@ const Partners = styled.ul`
     padding: 0 5vw;
   }
   @media (max-width: 768px) {
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
-    li { padding: 10px 0; box-shadow: none;}
   }
 `
 
 const LogoImgContainer = styled.div`
-  width: 250px;
-  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #a0b9e6;
+
 `
 
 const LogoImg = styled.img`
-  width: 200px;
-  height: 50px;
+  aspect-ratio: ${props => props.aspectRatio};
+  height: 40px;
+  @media (max-width: 768px) {
+    height: 25px;
+  }
 `
 
 const PartnersSection = styled(CardSection)`
   background: inherit;
   color: inherit;
   box-shadow: 2px 2px 10px var(--main-color);
+`
+
+const PartnersHeading = styled(CardHeading)`
+  color: var(--main-color);
+  text-align: center;
+  font-size: 1.2em;
+`
+
+const AndMore = styled.li`
+  @media (min-width: 769px) {
+    align-self: end;
+  }
 `

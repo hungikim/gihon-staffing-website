@@ -46,4 +46,5 @@ const CollapsableContent = styled.div`
     overflow: hidden;
     transition: 0.2s ease;
     padding: 0 10px;
+    font-size: 0.9em;
 `

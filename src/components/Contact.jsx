@@ -26,7 +26,7 @@ export default function Contact() {
                     </div>
                   </Contacts>
                   <br/>
-                  Or simply fill out the forms below and send to us. We enjoy hearing from you!<br/><br/>
+                  Or simply fill out the form below and send to us. We enjoy hearing from you!<br/><br/>
               
               <FormAndMap>
                   <ContactForm name="contact-form"/>

@@ -73,6 +73,7 @@ export const CardHeading = styled(PageSubHeading)`
 `
 
 export const PageText = styled.section`
+  /* outline: 2px solid; */
   @media (max-width: 768px) {
     padding: 2rem;
   }

@@ -53,10 +53,10 @@ const ContactContent = styled(PageContent)`
   box-shadow: 2px 2px 12px;
 
   @media (min-width: 769px) {
-    margin: 0 10vw 100px 10vw;
+    margin: 2rem 10vw 100px 10vw;
   }
   @media (max-width: 768px) {
-    margin: 0 10px 30px 10px;
+    margin: 10px 10px 30px 10px;
   }
 `
 

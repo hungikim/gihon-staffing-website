@@ -1,7 +1,8 @@
 import { ContactForm } from "./ContactForm";
-import { EmploymentImg, Banner, PageContent, PageHeading, PageWrapper, PageText } from "./Pages.styled";
+import { Banner, PageContent, PageHeading, PageWrapper, PageText } from "./Pages.styled";
 import employmentImg from '/src/assets/contact.jpg'
 import styled from "styled-components";
+import EmploymentImg from './EmploymentImg'
 
 export default function Contact() {
     const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY || process.env.VITE_GOOGLE_API_KEY

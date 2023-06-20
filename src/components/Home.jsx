@@ -1,16 +1,15 @@
 import styled from "styled-components"
-import { EmploymentImg, Banner, PageHeading, PageWrapper, PageSubHeading, PageContent, Border, CardSection, CardHeading, PageText } from "./Pages.styled"
+import { Banner, PageHeading, PageWrapper, PageContent, PageText } from "./Pages.styled"
 import employmentImg from '../assets/employment1.jpg'
 import IndustriesWeServe from "./IndustriesWeServe"
+import EmploymentImg from './EmploymentImg'
 
 export default function Home () {
   return (
     <PageWrapper id="Home">
       <Banner>
-        <EmploymentImg entImg src={employmentImg} />
-        <PageHeading>
-            Happy people, productive workplaces, start here.
-        </PageHeading>
+        <EmploymentImg src={employmentImg}/>
+        <PageHeading>Happy people, productive workplaces, start here.</PageHeading>
       </Banner>
       
       <PageContent>

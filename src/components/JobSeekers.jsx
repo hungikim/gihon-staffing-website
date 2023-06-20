@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { PageHeading, Banner, PageSubHeading, PageSubSubHeading, PageWrapper, PageContent, EmploymentImg, CardSection, CardHeading, PageText } from "./Pages.styled"
+import { PageHeading, Banner, PageSubHeading, PageSubSubHeading, PageWrapper, PageContent, CardSection, CardHeading, PageText } from "./Pages.styled"
 import employmentImg from '/src/assets/laptop.jpg'
 import BNXLogo from '/src/assets/BNX.png'
 import GinsengLogo from '/src/assets/Ginseng.png'
@@ -8,6 +8,7 @@ import HankookLogo from '/src/assets/Hankook.svg'
 import LGLogo from '/src/assets/LG.png'
 import NongshimLogo from '/src/assets/Nongshim.png'
 import PantosLogo from '/src/assets/Pantos.png'
+import EmploymentImg from './EmploymentImg'
 
 export default function JobSeekers () {
     return (

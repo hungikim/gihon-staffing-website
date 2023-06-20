@@ -1,6 +1,7 @@
-import { EmploymentImg, Banner, PageContent, PageHeading, PageSubSubHeading, PageWrapper, PageText } from "./Pages.styled";
+import { Banner, PageContent, PageHeading, PageSubSubHeading, PageWrapper, PageText } from "./Pages.styled";
 import employmentImg from '/src/assets/team.jpg'
 import styled from 'styled-components'
+import EmploymentImg from './EmploymentImg'
 
 export default function AboutUs() {
     return (

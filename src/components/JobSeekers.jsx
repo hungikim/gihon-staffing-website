@@ -106,7 +106,7 @@ export default function JobSeekers () {
 
 export const Solutions = () => (
   <HeadingAndList>
-  <PageSubSubHeading style={{fontSize:'1.05em'}}>We provide solutions<br/> in several types of employment relationships</PageSubSubHeading>
+  <PageSubSubHeading style={{fontSize:'1.05em'}}>We provide solutions in<br/> several types of employment relationships</PageSubSubHeading>
   <ul style={{listStyle:"disc"}}>
     <li>Contract-to-Hire</li>
     <li>Long-term & Short-term Projects</li>

@@ -1,23 +1,11 @@
-import { useState, useEffect } from "react";
 import { PageSubSubHeading, CardHeading } from "./Pages.styled";
 import styled from "styled-components";
 import { Wrapper, OL, LI } from "./MultipleCards.styled";
 import LiCollapsable from "./LiCollapsable";
+import { useSelector } from "react-redux";
 
 export default function OurSearchProcess() {
-  const [isMobile, setIsMobile] = useState(false);
-  const query = "(max-width:768px)"; // Check for mobile devices
-
-  useEffect(() => {
-    // Detect mobile devices. Source: https://fireship.io/snippets/use-media-query-hook/
-    const media = window.matchMedia(query);
-    if (media.matches !== isMobile) {
-      setIsMobile(media.matches);
-    }
-    const listener = () => setIsMobile(media.matches);
-    window.addEventListener("resize", listener);
-    return () => window.removeEventListener("resize", listener);
-  }, [isMobile, query]);
+  const isMobile = useSelector(state=>state.mobile.isMobile)
 
   const mobileHeadingStyle = {
     background: "var(--lighter-color)",

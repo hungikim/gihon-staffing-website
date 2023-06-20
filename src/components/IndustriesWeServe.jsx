@@ -15,12 +15,15 @@ export default function IndustriesWeServe() {
   const slides = [useRef(), useRef(), useRef()]
 
   useEffect(()=>{
-    slides[0].current.style.display='none'
-    slides[1].current.style.display='none'
-    slides[2].current.style.display='none'
+    if (isMobile) {
+        slides[0].current.style.display='none';
+        slides[1].current.style.display='none';
+        slides[2].current.style.display='none';
     
-    slides[currentIndex].current.style.display='list-item'
-  }, [currentIndex])
+        slides[currentIndex].current.style.display='list-item'
+    }
+  }, [currentIndex, isMobile])
+
 
   const goToLeftSlide = () => setCurrentIndex( (currentIndex-1) % 3 )
   const goToRightSlide = () => setCurrentIndex( (currentIndex+1) % 3 )
@@ -60,17 +63,20 @@ export default function IndustriesWeServe() {
             <IndustryName>Language Interpretation and Translation</IndustryName>
           </Industry>
         </Industries>
-
-        <LeftButton onClick={goToLeftSlide}>
-            <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 -960 960 960" width="36">
-                <path d="M400-80 0-480l400-400 56 57-343 343 343 343-56 57Z"/>
-            </svg>
-        </LeftButton>
-        <RightButton onClick={goToRightSlide}>
-            <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 -960 960 960" width="36">
-                <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z"/>
-            </svg>
-        </RightButton>
+        {isMobile &&
+          <>
+            <LeftButton onClick={goToLeftSlide}>
+                <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 -960 960 960" width="36">
+                    <path d="M400-80 0-480l400-400 56 57-343 343 343 343-56 57Z"/>
+                </svg>
+            </LeftButton>
+            <RightButton onClick={goToRightSlide}>
+                <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 -960 960 960" width="36">
+                    <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z"/>
+                </svg>
+            </RightButton>
+          </>
+        }
       </IndustriesWeServeUL>
     </CardSection>
   );

@@ -64,8 +64,8 @@ export default function JobSeekers () {
                 <Logo imgSrc={RSLogo} name='Royal Sovereign' heightPercent='150'/>
                 <Logo imgSrc={BNXLogo} name='BNX Shipping'/>
                 <Logo imgSrc={KOTRALogo} name='KOTRA' heightPercent='130'/>
-                <Logo imgSrc={GEILogo} name='Green Energy Institute'/>
-                <Logo imgSrc={JNTPLogo} name='Jeonnam Technopark'/>
+                <Logo imgSrc={GEILogo} name='Green Energy Institute' heightPercent='90'/>
+                <Logo imgSrc={JNTPLogo} name='Jeonnam Technopark' heightPercent='90'/>
                 <Logo imgSrc={OKTALogo} name='OKTA' heightPercent='70'/>
                 <AndMore>... and more</AndMore>
               </Partners>

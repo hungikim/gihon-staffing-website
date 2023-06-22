@@ -1,14 +1,18 @@
 import styled from "styled-components"
 import { PageHeading, Banner, PageSubHeading, PageSubSubHeading, PageWrapper, PageContent, CardSection, CardHeading, PageText } from "./Pages.styled"
 import employmentImg from '/src/assets/laptop.jpg'
-import BNXLogo from '/src/assets/BNX.png'
-import GinsengLogo from '/src/assets/Ginseng.png'
-import GlovisLogo from '/src/assets/Glovis.png'
-import HankookLogo from '/src/assets/Hankook.svg'
 import LGLogo from '/src/assets/LG.png'
-import NongshimLogo from '/src/assets/Nongshim.png'
 import PantosLogo from '/src/assets/Pantos.png'
+import LXLogo from '/src/assets/LX.png'
+import HankookLogo from '/src/assets/Hankook.svg'
+import RSLogo from '/src/assets/RS.png'
+import BNXLogo from '/src/assets/BNX.png'
+import KOTRALogo from '/src/assets/KOTRA.png'
+import GEILogo from '/src/assets/GEI.png'
+import JNTPLogo from '/src/assets/JNTP.png'
+import OKTALogo from '/src/assets/OKTA.png'
 import EmploymentImg from './EmploymentImg'
+import Logo from "./Logo"
 
 export default function JobSeekers () {
     return (
@@ -53,48 +57,16 @@ export default function JobSeekers () {
                 Our Clients & Partners
               </PartnersHeading>
               <Partners>
-                <li>
-                  <LogoImgContainer>
-                    <LogoImg src={BNXLogo} aspectRatio='235/51'/>
-                  </LogoImgContainer>
-                  BNX Shipping Inc.
-                </li>
-                <li>
-                  <LogoImgContainer>
-                    <LogoImg src={GinsengLogo} aspectRatio='400/70'/>
-                  </LogoImgContainer>
-                  Korea Ginseng Corp
-                </li>
-                <li>
-                  <LogoImgContainer>
-                    <LogoImg src={HankookLogo}/>
-                  </LogoImgContainer>
-                  Hankook Tire Canada
-                </li>
-                <li>
-                  <LogoImgContainer>
-                    <LogoImg src={PantosLogo} aspectRatio='424/133'/>
-                  </LogoImgContainer>
-                  Pantos Canada
-                </li>
-                <li>
-                  <LogoImgContainer>
-                    <LogoImg src={NongshimLogo} aspectRatio='983/254'/>
-                  </LogoImgContainer>
-                  Nongshim America
-                </li>
-                <li>
-                  <LogoImgContainer>
-                    <LogoImg src={GlovisLogo} aspectRatio='313/83'/>
-                  </LogoImgContainer>
-                  Hyundai Glovis
-                </li>
-                <li>
-                  <LogoImgContainer>
-                    <LogoImg src={LGLogo} aspectRatio='196/106'/>
-                  </LogoImgContainer>
-                  LG Electronics
-                </li>
+                <Logo imgSrc={LGLogo} aspectRatio='' name='LG Canada'/>
+                <Logo imgSrc={PantosLogo} aspectRatio='' name='Pantos Logistics'/>
+                <Logo imgSrc={LXLogo} aspectRatio='' name='LX Hausys Canada'/>
+                <Logo imgSrc={HankookLogo} aspectRatio='' name='Hankook Tire'/>
+                <Logo imgSrc={RSLogo} aspectRatio='' name='Royal Sovereign'/>
+                <Logo imgSrc={BNXLogo} aspectRatio='' name='BNX Shipping'/>
+                <Logo imgSrc={KOTRALogo} aspectRatio='' name='KOTRA'/>
+                <Logo imgSrc={GEILogo} aspectRatio='' name='Green Energy Institute'/>
+                <Logo imgSrc={JNTPLogo} aspectRatio='' name='Jeonnam Technopark'/>
+                <Logo imgSrc={OKTALogo} aspectRatio='' name='OKTA'/>
                 <AndMore>... and more</AndMore>
               </Partners>
             </PartnersSection>
@@ -137,7 +109,7 @@ const Partners = styled.ul`
     display: grid;
     gap: 30px 0px;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     padding: 0 5vw;
   }
@@ -145,21 +117,6 @@ const Partners = styled.ul`
     grid-template-columns: 1fr 1fr;
     gap: 20px 0px;
     font-size: 0.8em;
-  }
-`
-
-const LogoImgContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-`
-
-const LogoImg = styled.img`
-  aspect-ratio: ${props => props.aspectRatio};
-  height: 40px;
-  @media (max-width: 768px) {
-    height: 25px;
   }
 `
 

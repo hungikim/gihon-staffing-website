@@ -57,16 +57,16 @@ export default function JobSeekers () {
                 Our Clients & Partners
               </PartnersHeading>
               <Partners>
-                <Logo imgSrc={LGLogo} aspectRatio='' name='LG Canada'/>
-                <Logo imgSrc={PantosLogo} aspectRatio='' name='Pantos Logistics'/>
-                <Logo imgSrc={LXLogo} aspectRatio='' name='LX Hausys Canada'/>
-                <Logo imgSrc={HankookLogo} aspectRatio='' name='Hankook Tire'/>
-                <Logo imgSrc={RSLogo} aspectRatio='' name='Royal Sovereign'/>
-                <Logo imgSrc={BNXLogo} aspectRatio='' name='BNX Shipping'/>
-                <Logo imgSrc={KOTRALogo} aspectRatio='' name='KOTRA'/>
-                <Logo imgSrc={GEILogo} aspectRatio='' name='Green Energy Institute'/>
-                <Logo imgSrc={JNTPLogo} aspectRatio='' name='Jeonnam Technopark'/>
-                <Logo imgSrc={OKTALogo} aspectRatio='' name='OKTA'/>
+                <Logo imgSrc={LGLogo} name='LG Canada' heightPercent='130'/>
+                <Logo imgSrc={PantosLogo} name='Pantos Logistics' heightPercent='120'/>
+                <Logo imgSrc={LXLogo} name='LX Hausys Canada' heightPercent='70'/>
+                <Logo imgSrc={HankookLogo} name='Hankook Tire'/>
+                <Logo imgSrc={RSLogo} name='Royal Sovereign' heightPercent='150'/>
+                <Logo imgSrc={BNXLogo} name='BNX Shipping'/>
+                <Logo imgSrc={KOTRALogo} name='KOTRA' heightPercent='130'/>
+                <Logo imgSrc={GEILogo} name='Green Energy Institute'/>
+                <Logo imgSrc={JNTPLogo} name='Jeonnam Technopark'/>
+                <Logo imgSrc={OKTALogo} name='OKTA' heightPercent='70'/>
                 <AndMore>... and more</AndMore>
               </Partners>
             </PartnersSection>

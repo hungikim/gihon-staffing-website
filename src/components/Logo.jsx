@@ -1,15 +1,22 @@
 import styled from "styled-components";
 
-export default function Logo( { imgSrc, aspectRatio, name, heightPercent } ) {
+export default function Logo( { imgSrc, aspectRatio, name, heightPercent, url } ) {
   return (
-    <li>
+    <LogoWrapper onClick={()=>window.open(url, "_blank", "noreferrer")}>
       <LogoImgContainer>
         <LogoImg src={imgSrc} aspectRatio={aspectRatio} heightPercent={heightPercent}/>
       </LogoImgContainer>
       {name}
-    </li>
+    </LogoWrapper>
   );
 }
+
+const LogoWrapper = styled.li`
+    &:hover { 
+        cursor: pointer;
+        text-decoration: underline;
+    }
+`
 
 const LogoImgContainer = styled.div`
   display: flex;

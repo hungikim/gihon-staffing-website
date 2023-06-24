@@ -57,16 +57,16 @@ export default function JobSeekers () {
                 Our Clients & Partners
               </PartnersHeading>
               <Partners>
-                <Logo imgSrc={LGLogo} name='LG Canada' heightPercent='130'/>
-                <Logo imgSrc={PantosLogo} name='Pantos Logistics' heightPercent='120'/>
-                <Logo imgSrc={LXLogo} name='LX Hausys Canada' heightPercent='70'/>
-                <Logo imgSrc={HankookLogo} name='Hankook Tire'/>
-                <Logo imgSrc={RSLogo} name='Royal Sovereign' heightPercent='150'/>
-                <Logo imgSrc={BNXLogo} name='BNX Shipping'/>
-                <Logo imgSrc={KOTRALogo} name='KOTRA' heightPercent='130'/>
-                <Logo imgSrc={GEILogo} name='Green Energy Institute' heightPercent='90'/>
-                <Logo imgSrc={JNTPLogo} name='Jeonnam Technopark' heightPercent='90'/>
-                <Logo imgSrc={OKTALogo} name='OKTA' heightPercent='70'/>
+                <Logo imgSrc={LGLogo} name='LG Canada' heightPercent='130' url='https://www.lg.com/ca_en'/>
+                <Logo imgSrc={PantosLogo} name='Pantos Logistics' heightPercent='120' url='https://www.pantos.ca'/>
+                <Logo imgSrc={LXLogo} name='LX Hausys Canada' heightPercent='70' url='https://www.lxhausys.com'/>
+                <Logo imgSrc={HankookLogo} name='Hankook Tire' url='https://www.hankooktire.com/ca/en/home.html'/>
+                <Logo imgSrc={RSLogo} name='Royal Sovereign' heightPercent='150' url='https://royalsovereign.ca'/>
+                <Logo imgSrc={BNXLogo} name='BNX Shipping' url='https://www.bnxinc.com'/>
+                <Logo imgSrc={KOTRALogo} name='KOTRA' heightPercent='130' url='https://www.kotra.or.kr/'/>
+                <Logo imgSrc={GEILogo} name='Green Energy Institute' heightPercent='90' url='http://www.gei.re.kr'/>
+                <Logo imgSrc={JNTPLogo} name='Jeonnam Technopark' heightPercent='90' url='http://www.jntp.or.kr'/>
+                <Logo imgSrc={OKTALogo} name='OKTA' heightPercent='70' url='https://www.okta.net'/>
                 <AndMore>... and more</AndMore>
               </Partners>
             </PartnersSection>

@@ -17,12 +17,12 @@ export default function Contact() {
                   We encourage you to contact us using one of the methods below.<br/><br/>
                   <Contacts>
                     <div>
-                      840 Queens Plate Dr, Toronto<br/>
-                      ON M9W 0E7
+                      155 Downsview Park Blvd. Unit 207<br/>
+                      Toronto, ON M3K 0E3
                     </div>
                     <div>
                       M: <a href="tel:6475450922">647 545 0922</a><br/>
-                      O: 647 794 7845<br/>
+                      O: 647 424 1995<br/>
                       E: <a href='mailto: gihon.toronto@gmail.com'>gihon.toronto@gmail.com</a><br/>
                     </div>
                   </Contacts>

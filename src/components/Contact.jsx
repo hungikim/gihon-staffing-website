@@ -22,7 +22,7 @@ export default function Contact() {
                     </div>
                     <div>
                       M: <a href="tel:6475450922">647 545 0922</a><br/>
-                      O: 647 424 1995<br/>
+                      O: <a href="tel:6474241995">647 424 1995</a><br/>
                       E: <a href='mailto: gihon.toronto@gmail.com'>gihon.toronto@gmail.com</a><br/>
                     </div>
                   </Contacts>
@@ -38,7 +38,7 @@ export default function Contact() {
                       loading="lazy"
                       allowFullScreen
                       referrerPolicy="no-referrer-when-downgrade"
-                      src={`https://www.google.com/maps/embed/v1/place?key=${GOOGLE_API_KEY}&q=840+Queens+Plate+Dr,+Etobicoke,+ON+M9W+0E7`} 
+                      src={`https://www.google.com/maps/embed/v1/place?key=${GOOGLE_API_KEY}&q=155+Downsview+Park+Blvd,+North+York,+ON+M3K+0E3`} 
                   />
               </FormAndMap>
             </PageText>

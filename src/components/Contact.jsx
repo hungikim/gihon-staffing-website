@@ -14,33 +14,19 @@ export default function Contact() {
           </Banner>
           <ContactContent>
             <PageText>
-                  We encourage you to contact us using one of the methods below.<br/><br/>
-                  <Contacts>
-                    <div>
-                      155 Downsview Park Blvd. Unit 207<br/>
-                      Toronto, ON M3K 0E3
-                    </div>
-                    <div>
-                      M: <a href="tel:6475450922">647 545 0922</a><br/>
-                      O: <a href="tel:6474241995">647 424 1995</a><br/>
-                      E: <a href='mailto: gihon.toronto@gmail.com'>gihon.toronto@gmail.com</a><br/>
-                    </div>
-                  </Contacts>
-                  <br/>
-                  Or simply fill out the form below and send to us. We enjoy hearing from you!<br/><br/>
-              
-              <FormAndMap>
-                  <ContactForm name="contact-form"/>
-                  <Map
-                      width="480"
-                      height="360"
-                      style={{border:'1px solid var(--lighter-color)'}}
-                      loading="lazy"
-                      allowFullScreen
-                      referrerPolicy="no-referrer-when-downgrade"
-                      src={`https://www.google.com/maps/embed/v1/place?key=${GOOGLE_API_KEY}&q=155+Downsview+Park+Blvd,+North+York,+ON+M3K+0E3`} 
-                  />
-              </FormAndMap>
+              We encourage you to contact us using one of the methods below.<br/><br/>
+              <Contacts>
+                <div>
+                  M: <a href="tel:6475450922">647 545 0922</a><br/>
+                  O: <a href="tel:6474241995">647 424 1995</a><br/>
+                  E: <a href='mailto: gihon.toronto@gmail.com'>gihon.toronto@gmail.com</a><br/>
+                </div>
+              </Contacts>
+              <br/>
+              Or simply fill out the form below and send to us. We enjoy hearing from you!<br/><br/>
+
+              <ContactForm name="contact-form"/>
+
             </PageText>
           </ContactContent>
         </PageWrapper>

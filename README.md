@@ -1,5 +1,19 @@
-Website developed for Gihon Networks Toronto.
-Mobile Responsive 
-Skills / Libraries / Resources Used: React / Redux / Redux-Toolkit / Styled-Components / Mobile Query / Google Icon / UXWing / ColorHunt / Pexels / Unsplash / Google Maps API / Netlify Forms / React-Scroll-Parallax ...
+Business website built with react for Gihon Networks Toronto.<br>
+Mobile & Desktop Responsive.
 
-Contact form uses Netlify Forms to redirect form submissions to the business owner's email
+Live website: https://gihon.ca
+
+Skills / Libraries / Resources Used: <br>
+* React
+* Redux & Redux-Toolkit
+* Styled-Components
+* CSS (flex, grid etc.)
+* Media Query for responsiveness
+* Google Icon, UXWing for icons
+* ColorHunt for color theme
+* Pexels & Unsplash for stock images
+* Google Maps API for displaying business location (Removed from final website)
+* React-Scroll-Parallax for parallax effect on image scroll for smoother scrolling experience
+* Netlify for hosting
+* Netlify Forms for redirecting form submissions to client's email
+* Google Domains for domain

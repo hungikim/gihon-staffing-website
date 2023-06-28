@@ -3,7 +3,7 @@
 Mobile & Desktop Responsive.
 
 
-### Skills / Libraries / Resources Used: <br>
+### Skills / Libraries / Resources Used:
 * React
 * Redux & Redux-Toolkit
 * Styled-Components

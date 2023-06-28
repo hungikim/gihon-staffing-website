@@ -1,9 +1,9 @@
-Business website built with react for Gihon Networks Toronto.<br>
+### Business website built with react for Gihon Networks Toronto.
+### Live website: https://gihon.ca
 Mobile & Desktop Responsive.
 
-Live website: https://gihon.ca
 
-Skills / Libraries / Resources Used: <br>
+### Skills / Libraries / Resources Used: <br>
 * React
 * Redux & Redux-Toolkit
 * Styled-Components

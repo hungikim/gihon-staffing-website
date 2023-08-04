@@ -25,7 +25,19 @@ export default function IndustriesWeServe() {
   }, [currentIndex, isMobile])
 
 
-  const goToLeftSlide = () => setCurrentIndex( (currentIndex-1) % 3 )
+  const goToLeftSlide = () => {
+    switch (currentIndex) {
+      case 0:
+        setCurrentIndex(2)
+        break
+      case 1:
+        setCurrentIndex(0)
+        break
+      case 2:
+        setCurrentIndex(1)
+        break
+    }
+  }
   const goToRightSlide = () => setCurrentIndex( (currentIndex+1) % 3 )
 
   return (
